@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>안미연</li>
+        <li>문경수</li>
+        <li>김호원</li>
+        <li>기영민</li>
+        <li>윤상재</li>
+    </ul>
+    <h1>해품달 팀 </h1>
+    <h2>프로젝트 </h2>
+    <!--1.직접 다운로드 받아서 로드하는 방법 -->
+    <script src="/JS/jquery-3.6.4.min.js"></script>
+    <!-- 2. cdn 방법, jquery 안깔려 있을 때 좋음!-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--intergrity,crossorgin : 보안상 필요한 옵션(수정하지 말것!)-->
+    <!-- ★절대 jquery 파일 로딩하는 script태그 안쪽에 코드 작성하지 말것!!-->
+    <script>
+        // 태그에 여러가지 스타일 속성 적용시키기 
+        //1. 메소드 체인
+        //  $('li').css('color','Aquamarine').css('font-size','30px').css()
+        //2. javascript의 객체 형태로 스타일 적용시키기
+        //{'property' : '값',
+        //'property2': '값'}
+        $('h1').css({
+            'color': 'red',
+            'background-color': 'pink'
+        })
+        // 3. javascript의 객체 형태로 스타일 적용시키기2
+        $('h2').css({
+            'color': 'orange',
+            fontFamily: '궁서'
+        })
+    </script>
+
+</html>

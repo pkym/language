@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pTag">저를 변경해주세요!</p>
+    <button onclick="changeText()">변경!</button>
+    <script>
+        //변경 버튼 클릭시
+        //글씨의 색깔과 배경 색깔을 변경
+
+        let val1=document.getElementById('pTag');
+        // CSS 선택자로 적용
+        let val2=document.querySelector('#pTag')
+        console.log('val1',val1);
+        console.log('val2',val2);
+
+        const changeText =()=>{
+            val2.style.color='cornflowerblue';
+            val2.style.background='lightyellow';
+        }
+    </script>
+</body>
+</html>

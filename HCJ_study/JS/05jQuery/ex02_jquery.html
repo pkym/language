@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <div id="div2">나는 다이브2</div>
+        <div id="div3">나는 다이브3</div>
+        <div id="div4">러브 다이브4</div>
+    </div>
+
+    <h1 id="msg">조금만 있으면 집에...간다</h1>
+
+    <button onclick="func()">추가</button>
+    <table border="1px solid black">
+        <tr id="tb">
+            <td>클릭이벤트</td>
+            <td>발생</td>
+        </tr>      
+    </table>
+
+    <!--jquery쓰겠다-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--스크립트 작성-->
+    <script>
+        // 1. 자식요소 가져오는 방법
+        console.log($('#div1').children('div'));
+        // 2. 부모요소 가져오는 방법
+        console.log($('#div2').parent('div'));
+        // 3. 이전요소들을 가져오는 방법
+        console.log($('#div4').prevAll());
+        // 4. 다음요소들을 가져오는 방법
+        console.log($('#div2').nextAll());
+
+        //조작메소드
+        //1.code/text 가져오기
+        //1-1. .html(): 선택한 요소 안의 내용을 가져온다 (태그포함)
+        //1-2. .text(): 선택한 요소 안의 내용을 가져온다 (태그포함)
+        console.log($('#msg').html());
+        console.log($('#msg').text());
+        // $('#msg').text('<span>츕댜</span>'); >> 태그 안먹힘
+        // 태그 안에 태그 넣기
+        $('#msg').html('<span>츕댜</span>');
+
+        const func = () => {
+            $('#tb').after('<tr><td>새로추가1</td><td>새로추가2</td></tr>')
+        }
+
+    </script>
+</body>
+
+</html>

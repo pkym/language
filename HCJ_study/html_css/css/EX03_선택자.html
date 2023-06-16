@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /*1.전체선택자*/
+        /* *{
+            color : rgb(121, 177, 89);
+        } */
+        /*2.요소선택자*/
+        /* h2{
+            color : rgb(61, 141, 141);
+        } */
+        /*3.클래스선택자*/
+        /*자바 수업을 들어온 선생님만 글자 배경색을 변경*/
+        /* .java{
+            background-color : rgb(0, 0, 0);
+        } */
+        /*4.아이디선택자*/
+        /*DB 수업을 들어온 선생님은 글자 배경색을 변경*/
+        /* #db{
+            background-color: rgb(224, 241, 205);
+        } */
+        /*html수업을 들어온 선생님만 글자색을 회색으로 변경*/
+        /* #html{
+            background-color: gray;
+        } */
+        /*성별이 여성이 선생님들만 글씨크기를 bold로 지정*/
+        /* .f{
+            font-weight: bold;
+            color : white;
+        } */
+        /*5.그룹선택자*/
+        /*class가 java이고 f인 선생님들에게 글씨크기를 100px로 변경*/
+        /* .java,.f {
+            font-size: 30px;
+        } */
+        /*6.결합선택자: 자손, 자식, 일반동위, 인접동위
+                     : 띄어쓰기, >, ~, + 
+                     : 기준요소 계층선택자 변경할요소 */
+                     
+        /* 6-1. body를 기준으로해서 모든 li 요소의 글자크기를 20px 로 변경 */
+        body li {
+            font-size: 20px;
+        }
+
+        /* 6-2. (첫번째)모든 li를 기준으로해서 class명이 f인 요소의 글자색을 green 으로 변경 */
+        li~li.f {
+            color: rgb(119, 156, 101);
+        }
+
+        /* 6-3. li를 기준으로 class명이 java인 요소의 글자색을 gray로 변경*/
+        /* li중에서 class 명이 java인 요소만 선택*/
+        li.java {
+            background-color: grey
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 빅데이터반 </h2>
+    <ul>
+        <li class="java">박병관</li>
+        <li class="java f">임경남</li>
+        <li id="html" class="f">박수현</li>
+        <p class="java">자바수업</p>
+        <li id="db">신인호</li>
+        <li>강규남</li>
+    </ul>
+
+</body>
+
+</html>

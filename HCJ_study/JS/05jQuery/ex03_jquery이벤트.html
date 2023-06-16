@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            font-size : 30px;
+            text-align : center;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">클릭</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        //이벤트 처리        
+        $('div').on('click',()=> {
+            //div 태그의 너비 200px, 높이 200px, 배경 색은 파랑으로 변경
+            $('div').css({
+                'width' : '200px',
+                'height' : '200px',
+                'background-color' : 'skyblue'
+            })
+        })
+    </script>
+</body>
+</html>

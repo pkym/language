@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Bom(Browser Object Model)
+        // 브라우저에서 제공하는 객체
+
+        // window : 브라우저 객체 최상위, 브라우저 창 접근 가능(팝업처럼 열림)
+        // 여기서 window는 생략해도됨
+        window.open("https://www.naver.com/","네이버","width = 500; height = 500")
+
+        // location : 브라우저의 주소 관련 정보(브라우저의 현재 주소가 이걸로 바뀜)
+        console.log(location);
+        console.log('현재주소 : ',location.href);
+        location.href = "https://www.google.co.kr/"
+
+        //screen : 화면 해상도 정보(너비, 높이)
+        console.log(screen);
+
+        // navigator :현재 브라우저정보(버전, 이름, 위치 등)
+        console.log(navigator);
+
+        // 이건 네비게이터 안에 있는 친구
+        // history : 브라우저 이동 관련 기능(뒤로, 앞으로)
+        // 콘솔안에서 history.back()/go(- 뒤 로갈 만큼의 수 /+앞으로 갈만큼의 수 )/forward() 등의 기능도 사용가능
+        // back() -> 뒤로 / forward()-> 앞으로 / go()-> 설정 자유
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

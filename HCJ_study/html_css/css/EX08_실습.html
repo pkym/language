@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2.css 적용하기 */
+        /* 2-1. 마우스가 올리기 전까지는 sup태그가 보이지 않게 */
+
+        sup {
+            display: none
+        }
+        /* 2-2. a 요소에 마우스를 올리면 sup 태그가 보이게 */
+        /* a와 sup는 인접관계 (+) */
+        /* 기준선택자 계층선택자기호 변경할요소선택자 */
+
+        a:hover {
+            color: tomato
+        }
+
+        a:hover + sup {
+            color: black;
+            display: inline;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+    <!--1. html 뼈대만들기-->
+    <!--a태그 기능: hyperlink 기능
+                 : a태그의 content를 눌렀을 때, href의 주소를 이동-->
+        <a href="https://www.naver.com" >네이버</a>
+        <sup>www.naver.com</sup><br>
+    
+        <a href="https://www.daum.net">다음</a>
+        <sup>www.daum.net</sup>
+    
+
+</body>
+
+</html>

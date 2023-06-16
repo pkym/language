@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_테이블태그</title>
+</head>
+
+<body>
+    <h2>테이블태그로 메뉴판 만들기</h2>
+    <table border="1">
+        <!--caption:  표의 제목-->
+        <caption><mark><b>돌매순두부</b></mark></caption>
+        <thead>
+            <!--thead: header content를 모아놓은 태그-->
+            <!--tr: 1행-->
+            <tr>
+                <!--th: 행의 제목을 나타낼 때 사용-->
+                <th>메뉴</th>
+                <th>가격</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--tbody: body content를 모아놓은 태그-->
+            <!--tr: 1행-->
+            <tr>
+                <td>순두부찌개</td>
+                <td>8,000원</td>
+                <td rowspan="3">식사</td>
+            </tr>
+            <!--tr: 2행-->
+            <tr>
+                <td>청국장</td>
+                <td>8,000원</td>
+
+            </tr>
+            <!--tr: 3행-->
+            <tr>
+                <td>해물파전</td>
+                <td>8,000원</td>
+
+            </tr>
+            <!--tr: 4행-->
+            <tr>
+                <td>맥주</td>
+                <td>3,000원</td>
+                <td rowspan="2">주류</td>
+            </tr>
+            <!--tr: 5행-->
+            <tr>
+                <td>소주</td>
+                <td>3,000원</td>
+
+            </tr>
+            <!--tr: 6행-->
+            <tr>
+                <td>막걸리</td>
+                <td colspa n="2">판매중지</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table border="1">
+        <caption>스불자</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>기영민</td>
+                <td>20</td>
+                <td rowspan="2">여자</td>
+            </tr>
+            <tr>
+                <td>안미연</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>최근호</td>
+                <td>12</td>
+                <td rowspan="2">남자</td>
+            </tr>
+            <tr>
+                <td>한성규</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // ** 객체
+        // 여러 속성을 하나의 변수에 저장할 수 있도록 해주는 데이터 타입
+        // 객체 구조 : {key1 : value1, key2 : vlaue2 ... }
+        // key : 객체의 속성
+        // value : 속성의 값
+        
+        // 객체 생성
+        let person = {
+            "name" : "구소현",
+            age : 20,
+            female : true,
+            intro : () => {console.log('여러분 안녕하세요! 반가워요~'); },
+            favorite :{
+                food :'카레',
+                drink :'콜라'
+            },
+            smhrd : ['세영','규남','운비']
+        }
+        //객체 접근
+        console.log(person);
+
+        // 객체 안에서 특정 하나만 가지고오기
+        console.log("이름 : " ,person.name); 
+        console.log("나이 : " ,person.age);
+        console.log("여성 : " ,person.female);
+
+        person.intro();   // 안에 콘솔 자체가 있어서 그냥 써줌!
+        console.log('좋아하는 것들 : ', person.favorite);
+        console.log('담임선생님 : ', person.smhrd[1],"🎈");
+
+        // 속성 값 변경 및 추가
+        person.name = '장원영';
+        console.log('이름변경 : ',person.name);
+        person.height = 180 ;
+        console.log('키 : ',person.height);
+
+    </script>
+
+</body>
+</html>

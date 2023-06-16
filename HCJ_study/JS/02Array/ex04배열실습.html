@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let num=Number(prompt("과목 수 입력"));
+        let subject=[];
+        let score=[];
+        let totalScore=0;
+        let avgScore=0;
+        for (let index = 0; index < num; index++) {         
+            subject[index]=prompt("점수를 입력할 과목을 입력하세요");
+        }
+        for (let index = 0; index < num; index++) {         
+            score[index]=prompt(`${subject[index]}의 점수를 입력`);
+            totalScore+=Number(score[index]);
+        }
+        console.log(totalScore) 
+        avgScore=totalScore/num;   
+
+        document.write('<table border=1>');
+        document.write('<tr>');
+            for (let i = 0; i < num; i++) {                
+                document.write(`<td>${subject[i]}</td>`)                
+            }
+        document.write('<td>총합</td>')
+        document.write('<td>평균</td>')
+        document.write('</tr>');
+        document.write('<tr>');
+            for (let i = 0; i < num; i++) {                
+                document.write(`<td>${score[i]}</td>`)                
+            }
+        document.write(`<td>${totalScore}</td>`)
+        document.write(`<td>${avgScore}</td>`)
+        document.write('</tr>');
+
+    </script>
+      
+</table>
+
+    
+</body>
+</html>

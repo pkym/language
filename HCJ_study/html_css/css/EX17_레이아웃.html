@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #layout{
+            background-color: whitesmoke;
+            width: 100%;   height: 700px; 
+            text-align: center;     
+        }
+        header{
+            background-color: tomato;  
+            height: 10%;                
+        }
+        nav{
+            background-color: orange;
+            height: 10%;  
+        }
+        article{
+            background-color: seagreen;
+            width: 70%; height: 30%; float:right;
+        }
+        section{
+            background-color: cornflowerblue;
+            width: 70%; height: 30%; float:right;
+        }
+        aside{
+            background-color: blueviolet;
+            width: 30%; height: 60%;
+        }
+        footer{
+            background-color: grey;   
+            height: 20%;
+            clear:both;
+            /*내 옆에 아무도 오게 하지 않고 나 혼자 있겠다  */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <!----------------------------------->
+        <header> header : 문서의 헤더 역할(사이트 로고, 검색창, 로그인/회원가입 버튼 등 글로벌링크)</header>
+        <nav> nav : HTML 문서를 탐색할 수 있는 링크들의 집합
+            <a href="">메일</a>
+            <a href="">카페</a>
+            <a href="">블로그</a>
+        </nav>
+        <article>
+            article: HTML문서에서 독립적인 하나의 기사(문서) >> 다른거 몰라도 알 수 있어야 함 <br>
+            오늘의 뉴스
+        </article>
+        <section>
+            section: 해당 HTML문서의 전체적인 내용과 관련이 있는 컨턴체들의 집합>> 이미지, 영상 등등<br>
+            오늘의 포스트
+        </section>
+        <aside>
+            aside: HTML 문서의 내용과 직접적인 관련성이 적은 콘텐츠로 구성(쇼핑, 배너, 용어 설명)
+        </aside>
+        <footer>
+            footer: 꼬리말, 회사소개/이용약관/고객센터 등의 글로벌링크
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">연락처</a>
+        </footer>
+
+    </div>
+</body>
+</html>

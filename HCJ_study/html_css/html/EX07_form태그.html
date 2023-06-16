@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07_form 태그</title>
+</head>
+
+<body>
+    <h2>form 태그: 입력양식 태그 실습</h2>
+    <!--from태그: 사용자로부터 데이터를 입력받아서 전송할 때 사용하는 태그-->
+    <form action=""><!--action: 데이터를 전송할 위치-->
+        <!--type ="text" : 데이터를 입력
+            name : 해당 데이터를 구분하기 위해서 이름 지정(필수)
+            placeholder : 미리보기가능
+            value : 기본값으로 지정돼있는 형태 -->
+        아이디 : <input type="text" name="id" placeholder="아이디를 입력하세요"><br>
+        이름 : <input type="text" name="name" value="기영민"><br>
+        비밀번호: <input type="password" name="pw">
+        <hr>
+        셀력트-옵션: 이메일 고르기
+        <!--데이터 넘어가는 예시 >> value지정시 email이름으로 naver란 값이 넘어감-->
+        <select name="email">
+            <option value="google">구글</option>
+            <option value="naver">네이버</option>
+            <option value="kakao">카카오</option>
+        </select>
+        <hr>
+        체크박스(여러개선택): 좋아하는 음식 고르기 <br>
+        <!--name값이 동일해야함: data를 받아올 때 food 안에 그룹으로 묶어서 받아옴
+            value값 지정 이유: 체크를 한 해당 값이 어떤 값인지 알려주기 위해서-->
+        <input type="checkbox" name="food" value="chicken"> 치킨 <br>
+        <input type="checkbox" name="food" value="pizza"> 피자 <br>
+        <input type="checkbox" name="food" value="ddokbbokki"> 떡볶이 <br>
+        <hr>
+        라디오(한개만 선택): 성별선택 <br>
+        <!-- name으로 안 묶으면 여러개 선택 가능-->
+        <input type="radio" name="gender" value="male"> 남자 <br>
+        <input type="radio" name="gender" value="female"> 여자 <br>
+        <hr>
+        파일선택 <input type="file" name="file">
+        <hr>
+        색깔선택 <input type="color" name="color">
+        <hr>
+        날짜선택 <input type="date" name="birthday">
+        <hr>
+        시간선택 <input type="datetime-local" name="meeting">
+        <hr>
+        게시글작성
+        <!--열의 크기 cols 행의 길이 rows-->
+        <textarea name="board" cols="20" rows="10" style="resize:none"></textarea>
+        <hr>
+        <!--reset: input 요소의 모든 값을 초기화-->
+        <input type="reset" value="모두 삭제">
+        <!--submit: input 요소의 모든 값을 전송할 때 누르는 버튼-->
+        <input type="submit">
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

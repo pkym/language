@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-sizing: 요소의 크기를 화면에 크기를 표시하는 방법
+            content-box: content내용의 크기를 지정
+              (기본값)  : width: 200px 지정할 경우 
+                         content의 크기가 200px로 지정된다 
+                       : 패딩이나 볼더에 크기가 다를 경우 
+                         html 요소의 모습을 상상하기 어렵다
+            border-box: border+padding+contents의 크기를 지정
+                      : widtH: 200px로 지정할 경우
+                        border+padding+contents = 200px*/
+        div {
+             /* 내가 지정한 크기는 컨텐츠의 크기 */
+            width: 200px;            
+            margin-bottom: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #small{
+            border: 10px solid black;
+        }
+        #large{
+            border: 30px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="small">small</div>
+    <div id="large">large</div>
+
+
+
+</body>
+
+</html>

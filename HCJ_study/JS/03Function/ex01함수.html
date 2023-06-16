@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // **함수
+        // 1. 어떤 실행코드를 묶어서 실행하기 위함( 재사용성 )
+        // --> 중복되는 코드 최소화
+
+        // 1. 함수 선언문
+        // 함수선언문의 위치와 상관없이 호출이 가능한 것! --> 함수 호이스팅 발생
+        // 호이스팅현상 : 함수의 선언문이 코드의 선두로 끌어올려진 것처럼 동작하는 것 
+        
+        // -2. var로 했을때 호이스팅
+        console.log('위', name);
+        var name = '구소현';
+        console.log('아래', name);
+        
+        // -1. 함수 호이스팅
+        console.log('위' , addFunc(1,3)) // 얘도 함수가 먹어짐 
+
+        // 함수 생성하기
+
+        function addFunc(a,b) {
+            // 로직 & 기능 구현을 위한 코드작성
+            return a+b ;       //생략가능
+        }
+        // ( ) --> 어떤 값을 전달 받아올건지, 매개변수(파라미터)를 정의하는 부분
+        // { } --> 실제로 함수 안에서 어떤 코드가 동작하는지, 코드 작성 부분
+        console.log('아래',addFunc(3,4))
+
+        // 함수 선언
+        function helloworld(a,b) {
+            // 로직 & 기능 구현을 위한 코드작성
+            console.log('Hello World!')
+        }
+        // 함수 호출
+        helloworld();
+
+
+        //2. 함수 표현식
+
+        //익명함수를 선언하고, 변수에 참조
+        // 함수 표현식에서는 함수 호이스팅 발생 X
+
+        let minusFunc = function(a,b){
+            return a-b ;
+        }
+
+        console.log('빼기 함수', minusFunc(5,3))
+
+        //3. 화살표함수
+        // 함수 표현식으로 정의, function 키워드 대신' => ' 써준다
+
+        const multiFunc = (a,b)=>{
+            return a* b
+        };
+
+        console.log('곱하기 함수', multiFunc(5,3))
+
+        //매개변수하나면 소괄호 생략이 가능하다
+        // 실행문장1개, 값으로 변환 --> return, {} 생략 가능
+        const printName = name => 
+           `안녕하세요. 제 이름은 ${name}입니다.`
+       
+        console.log(printName('구소현'))
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

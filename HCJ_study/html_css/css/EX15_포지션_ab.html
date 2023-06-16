@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position: absoulute
+                   : static 이 아닌 조상요소를 기준으로 해서 위치 설정
+                   : 만약, 조상이 전부 static 이 라면 body가 기준이 됨  */
+        #parents{
+            height: 300px; 
+            border: 10px solid black;
+            position: relative;
+        }
+        #child{
+            height: 100px; width: 100px;
+            background-color: gold;
+            /* relatice: 내 위치를 기준으로 이동
+               absoulute: 부모요소 내에서 위치 선정 */
+            position: relative;
+            top: 20px;
+            right: 2px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="parents">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

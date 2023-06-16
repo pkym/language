@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2.내부방식 -->
+    <style>
+        h2{
+            color: teal;
+            background-color: pink;
+        }     
+    </style>
+    <!--3.외부방식-->
+    <!--특징1. link태그를 작성한 순서대로 css파일을 다운로드
+            2. 병렬 다운로드를 지원
+            3. link태그가 많아지면 코드가 지저분해 진다
+            4. 가장 많이 사용하는 방식이다(코드노출방지,유지보수 편의성,효율적 재사용)-->
+    <link rel="stylesheet" href="./EX18_외부csss.css">
+    <link rel="stylesheet" href="./EX18_외부csss.css">
+    <!--4.임포트방식-->
+    <!--특징1. 다운로드 순서가 예측 불가능
+            2. 병렬 다운로드 지원X
+            3. 외부 css 파일이 많을 때 링크 태그보다 간결-->
+    <style>@import url("./EX19_importcss.css");  </style>
+</head>
+<body>
+    <!--1.인라인방식 : html태그 내에 style 속성을 사용해서 스타일을 지정
+                  : css 로 분리한 이유가 사라지게 되므로 권장 X
+                  : 꼭 필요한 경우에만 사용!-->
+    <h1 style="color: cornflowerblue; background-color: antiquewhite;">인라인 방식</h1>
+    <!--2.내부방식   : head요소에 style 요소를 사용해서 css적용-->
+    <h2>내부방식</h2>
+    <!--3.외부방식   : link태그를 사용해서 외부 css를 적용 -->
+    <h3>외부방식</h3>
+    <!--4.임포트방식 : style 요새 내에 @import사용해서 외부 css적용-->
+    <h4>임포트방식</h4>
+</body>
+</html>

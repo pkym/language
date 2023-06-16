@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color=prompt('원하는 색깔은 입력하세요');
+        console.log('배경색: ', color);
+
+        let result =''
+
+        switch (color) {
+            case '초록': result ='green'                
+                break;
+            case '빨강': result = 'red'
+                break;
+            case '파랑': result = 'blue'
+                break;
+            default: alert('잘못 입력하셨습니다')
+                break;
+        }
+        document.getElementById('body tag').style.backgroundColor=result;
+
+
+    </script>
+</body>
+</html>

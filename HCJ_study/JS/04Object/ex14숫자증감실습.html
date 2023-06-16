@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <p id="num">0</p>
+    <button id="btn-plus">증가</button>
+    <button id="btn-minus">감소</button>
+
+    <!--문제. 버튼을 눌렀을 때, 웹페이지의 숫자가 변화는 로직
+    조건) 감소 버튼 클릭했을 때, 음수가 나오지 않도록!
+
+1. html 태그에 접근(p, button)
+2. 각 버튼에 이벤트를 정의한다
+3. 결과값을 p태그에 출력하게 한다-->
+    <script>
+        const num = document.getElementById("num");
+        const btnPlus = document.getElementById("btn-plus");
+        const btnMinus = document.getElementById("btn-minus");
+        const plusNumber = function(){
+            let n=Number(num.textContent);
+            n+=1;
+            num.textContent=n;
+        }
+        btnPlus.addEventListener("click", plusNumber)
+        
+        btnMinus.addEventListener("click", function(){
+            let n=Number(num.textContent);
+            if(n>0){
+                n-=1;
+                num.textContent=n;
+                console.log(n);
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

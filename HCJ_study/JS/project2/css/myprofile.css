@@ -1,0 +1,105 @@
+    .p-3 {
+        background-color: #1BBC98 !important;
+    }
+    .nav li{
+        font-size: 15px;
+        font-weight: 100;        
+    }
+    div#foot{
+        width:100%;        
+        position : absolute;
+        left: 0;
+        bottom : 0;
+    }
+    .ratio-16x9{        
+        margin-left: 100px;
+        width: auto;  
+        background-color: black;
+    }
+    .do_write{
+        margin-left:100px;
+        width: 800px; 
+        background-color: lightgrey;     
+    }
+    .content_hidden{
+        overflow: hidden !important;
+        height: auto !important; 
+        width: auto;     
+    }    
+    .container1{              
+        position: absolute;
+        background-color: #c5faee !important;
+        width: 800px;       
+        font-size: 20px;     
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        display:inline-block;  
+        overflow: hidden !important;  
+        height: auto !important;      
+       
+    }
+    .container2{
+        margin-top: 400px;
+        position: absolute;
+        background-color: #c5faee !important;
+        width: 800px;        
+        font-size: 20px;        
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        display:inline-block;
+        overflow: hidden !important;
+        height: auto !important;
+    }
+    .container3{
+        margin-top: 700px;
+        position: absolute;
+        background-color: #c5faee !important;
+        width: 800px;
+        font-size: 20px;        
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        display:inline-block;        
+        overflow: hidden !important;
+        height: auto !important;
+    } /*제목*/
+
+    .mb-1{
+      width:700px;
+      padding:0 5px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+
+    /*더보기버튼 누르기 전에 나올 수 있는 것*/    
+    .content_hidden{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*7줄이상 넘어가면 ...나오기*/
+    display: -webkit-box;
+    -webkit-line-clamp: 7; 
+    -webkit-box-orient: vertical;     
+    line-height: 1.2em;
+    height: 8.4em; 
+    }
+    /*더보기 버튼*/
+    .more_button{            
+        appearance: none;
+        border: 1px solid #ffffff;
+        padding: 0.1em;
+        border-radius: 0.25em;
+        font-size: 15px;
+        color: rgb(0, 5, 4);
+        background-color: #fff;
+        cursor: pointer;
+        margin: 1rem;     
+    }
+    .more_button::before{
+        content:'더보기';       
+    }
+    .cmore_button:checked::before{
+        content:'닫기';       
+    }
+    .content_hidden:has(+ .more_button:checked){
+        -webkit-line-clamp:unset
+    }

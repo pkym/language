@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* positon: fixed: 화면을 기준으로 절대 위치 설정 */
+        a{
+            background-color: blanchedalmond;
+            color: cornflowerblue;
+            position: fixed;
+            right: 30px;
+            bottom: 50px;
+        }
+        a + a{           
+            position: fixed;            
+            bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">맨 윗부분</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 id="mid">중간 부분</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#mid">중간으로 올라가기</a>
+    <a href="#top">맨 위로 올라가기</a>
+    
+</body>
+
+</html>

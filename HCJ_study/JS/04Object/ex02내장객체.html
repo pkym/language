@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 내장객체 : 자바스크립트에서 제공하는 객체
+        // Array, Math, Date, ...
+
+        let today = new Date();
+        console.log(today);
+
+
+        console.log('오늘 :' , today);
+        let yesterday = new Date(2023,2,7,0,0,0);  // 월은 -1 해줘야 정상 월이 출려됨
+        console.log('어제 :',yesterday);
+
+        let tYear = today.getFullYear(); //년
+        let tMonth = today.getMonth()+1;  // 월 0~11이니까
+        let tDate = today.getDate();    //일
+        let tDay = today.getDay();     // 요일 (0~6) --> 시작 요일은 일요일
+        let tHour = today.getHours();    // 시
+        let tMinute = today.getMinutes();  //분
+        let tSeconds = today.getSeconds(); //초
+
+        let Daylist = ['일','월','화','수','목','금','토']
+
+        // 출력 형태
+        // 0000년 00월 00일 0 요일, 00시 00분 00초 입니다!
+
+        document.write(`${tYear}년 ${tMonth}월 ${tDate}일 ${Daylist[(tDay)]}요일 <br>
+                    ${tHour}시 ${tMinute}분 ${tSeconds}초 입니다`);
+
+
+    </script>
+
+
+</body>
+</html>
